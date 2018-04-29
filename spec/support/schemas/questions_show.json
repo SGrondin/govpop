@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "status",
+    "voting_begins_at",
+    "voting_ends_at",
+    "title",
+    "short_text",
+    "full_text",
+    "level",
+    "sponsors"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "voting_begins_at": {
+      "type": "string"
+    },
+    "voting_ends_at": {
+      "type": "string"
+    },
+    "short_text": {
+      "type": "string"
+    },
+    "full_text": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string"
+    },
+    "sponsors": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["status", "questions"],
+  "properties": {
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["voting_begins_at", "voting_ends_at", "title", "level", "sponsors"],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "voting_begins_at": {
+            "type": "string"
+          },
+          "voting_ends_at": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string"
+          },
+          "sponsors": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  }
+}

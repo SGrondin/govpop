@@ -1,0 +1,10 @@
+/.bundle
+
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+/frontend/node_modules
+/frontend/.cache
+/frontend/dist

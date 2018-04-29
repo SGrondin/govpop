@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: <%= ENV['DB_HOST_URL'] %>
+  username: postgres
+  password:
+  database: govpop
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: govpop_test<%= ENV['TEST_ENV_NUMBER'] %>
+
+production:
+  <<: *default
